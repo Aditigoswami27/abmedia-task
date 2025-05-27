@@ -1,5 +1,6 @@
 # AB Media Frontend-Backend Integration Task
 
+Deployed link : https://abmedia-task-n3v1.vercel.app/
 This project is built as part of the AB Media internship task. It demonstrates a simple responsive homepage that integrates a React frontend (MUI + React Query) with a Node.js + Express + MongoDB backend.
 
 ##  Features
