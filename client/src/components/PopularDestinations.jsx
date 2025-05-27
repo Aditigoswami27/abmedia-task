@@ -12,12 +12,14 @@ import {
   Box,
 } from '@mui/material';
 
+// Displays a grid of popular destinations fetched from the API
 const PopularDestinations = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ['destinations'],
     queryFn: fetchDestinations,
   });
-
+  
+  // Show loading skeletons while data is being fetched
   if (isLoading) {
     return (
       <Grid container spacing={2}>
@@ -32,7 +34,7 @@ const PopularDestinations = () => {
     );
   }
 
-  if (isError) return <p>Something went wrong!</p>;
+  if (isError) return <p>Something went wrong!</p>;  // Handle error state
 
   return (
     <Box id="destinations" sx={{ mt: 4 }}>

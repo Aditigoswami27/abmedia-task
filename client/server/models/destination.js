@@ -1,3 +1,5 @@
+
+// Define schema for Destination collection in MongoDB
 import mongoose from 'mongoose';
 
 const destinationSchema = new mongoose.Schema({

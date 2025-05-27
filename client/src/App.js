@@ -5,15 +5,15 @@ import PopularDestinations from './components/PopularDestinations';
 import { CssBaseline, Container } from '@mui/material';
 import Footer from './components/Footer';
 
+// Main App layout with Hero, packages, and footer
 const App = () => {
   return (
     <>
-      <CssBaseline />
-      <Hero />
+      <CssBaseline />  {/* Resets browser styling */}
+      <Hero />        {/* Hero section with banner */}
       <Container maxWidth="lg" sx={{ mt: 4 }}>
-        <PopularDestinations />
-        <TopSellingPackages />
-        {/* Removed Advantages as file doesn't exist */}
+        <PopularDestinations />   {/* Most popular destinations */}
+        <TopSellingPackages />    {/* Top selling packages */}
       </Container>
       <Footer />
     </>

@@ -5,6 +5,7 @@ const seedData = async () => {
   await Destination.deleteMany();
   await Package.deleteMany();
 
+  //mock data
   await Destination.insertMany([
     {
       name: "Goa",

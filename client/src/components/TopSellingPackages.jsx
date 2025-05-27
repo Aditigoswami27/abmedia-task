@@ -13,13 +13,14 @@ import {
   Box,
 } from '@mui/material';
 
+// Displays a list of top selling tour packages
 const TopSellingPackages = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ['topPackages'],
     queryFn: fetchTopPackages,
   });
 
-  if (isLoading) {
+  if (isLoading) {  // Loading skeletons
     return (
       <Grid container spacing={2}>
         {[1, 2, 3, 4].map((i) => (
@@ -33,7 +34,7 @@ const TopSellingPackages = () => {
     );
   }
 
-  if (isError) return <p>Failed to load packages</p>;
+  if (isError) return <p>Failed to load packages</p>;  //error catching
 
   return (
     <Box id="top-packages" sx={{ mt: 6 }}>

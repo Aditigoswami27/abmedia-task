@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
 
-const Hero = () => {
+const Hero = () => {   // Scroll smoothly to the "top-packages" section when button clicked
   const handleScroll = () => {
     const section = document.getElementById('top-packages');
     if (section) {

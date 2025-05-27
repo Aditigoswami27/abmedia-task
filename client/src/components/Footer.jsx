@@ -3,6 +3,7 @@
 import React from 'react';
 import { Box, Typography, Container, Grid, Avatar } from '@mui/material';
 
+// Static testimonials data for footer section
 const testimonials = [
   {
     name: 'Aarav Mehta',
@@ -21,6 +22,7 @@ const testimonials = [
   },
 ];
 
+// Footer component displaying traveler testimonials and copyright
 const Footer = () => {
   return (
     <Box
